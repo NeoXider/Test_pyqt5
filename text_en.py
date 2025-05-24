@@ -1,0 +1,7 @@
+btn_next = "Next Question"
+btn_answer = "Answer"
+result_group = "Test Result"
+right = "Correct! ✔️"
+fail = "Incorrect! ✖️"
+end = "Test completed! 🥳"
+group_btns = "Answer options"
