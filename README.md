@@ -4,8 +4,8 @@
 
 ## Скриншот
 
-<!-- Вставьте скриншот приложения сюда -->
-<!-- ![Скриншот приложения](screenshot.png) -->
+![image](https://github.com/user-attachments/assets/d5b9b925-abd3-4cce-a33b-93da11f984e8)
+
 
 ## Особенности
 
