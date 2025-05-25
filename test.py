@@ -39,7 +39,7 @@ class Test:
         """Увеличивает счетчик правильных ответов."""
         self.right_answer += 1
 
-    def check(self, answer) -> bool:
+    def check(self, answer: str) -> bool:
         """Проверяет ответ на текущий вопрос."""
         return self.get_question().check(answer)
 
