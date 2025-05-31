@@ -65,7 +65,7 @@ Question(
 
 ## Автор
 
-Автор: [neoxider](https://github.com/neoxider) (если есть профиль на GitHub или другой ресурс)
+Автор: [neoxider](https://github.com/neoxider)
 
 ## Версия
 
