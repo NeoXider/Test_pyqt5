@@ -37,7 +37,7 @@ class TestWindow(QWidget):
         self.setStyleSheet(style.MAIN_STYLE)
 
         self.main_layout = QVBoxLayout()
-        self.main_layout.setContentsMargins(50,50,50,50)
+        self.main_layout.setContentsMargins(50, 50, 50, 50)
         self.setLayout(self.main_layout)
 
         self.lb_Question = QLabel("")
@@ -74,12 +74,17 @@ class TestWindow(QWidget):
         # Метка для номера вопроса и общего количества
         self.lb_QuestionCounter = QLabel("")
         self.lb_QuestionCounter.setObjectName("QuestionCounterLabel")
-        self.main_layout.addWidget(self.lb_QuestionCounter, alignment=Qt.AlignmentFlag.AlignCenter)
+        self.main_layout.addWidget(
+            self.lb_QuestionCounter, alignment=Qt.AlignmentFlag.AlignCenter
+        )
 
         # Метка для версии и автора
         self.lb_AppInfo = QLabel(f"v{app_info.APP_VERSION} by {app_info.APP_AUTHOR}")
         self.lb_AppInfo.setObjectName("AppInfoLabel")
-        self.main_layout.addWidget(self.lb_AppInfo, alignment=Qt.AlignmentFlag.AlignBottom | Qt.AlignmentFlag.AlignRight)
+        self.main_layout.addWidget(
+            self.lb_AppInfo,
+            alignment=Qt.AlignmentFlag.AlignBottom | Qt.AlignmentFlag.AlignRight,
+        )
 
     def create_btns(self):
         self.groupBoxRadioBtn = QGroupBox(t.group_btns)
@@ -104,7 +109,9 @@ class TestWindow(QWidget):
         self.update_question_counter_label()
 
     def update_question_counter_label(self):
-        self.lb_QuestionCounter.setText(f"{t.question_word} {self.test.question_id + 1} {t.of_word} {self.test.total}")
+        self.lb_QuestionCounter.setText(
+            f"{t.question_word} {self.test.question_id + 1} {t.of_word} {self.test.total}"
+        )
 
     def show_result(self) -> None:
         """показать панель ответов"""
@@ -151,7 +158,9 @@ class TestWindow(QWidget):
         for i, btn in enumerate(self.radio_buttons):
             row = i // 2
             col = i % 2
-            self.grid_layout.addWidget(btn, row, col, alignment=Qt.AlignmentFlag.AlignCenter)
+            self.grid_layout.addWidget(
+                btn, row, col, alignment=Qt.AlignmentFlag.AlignCenter
+            )
 
     def show_correct(self, res):
         """показать результат - установим переданный текст в надпись "результат" и покажем нужную панель"""

@@ -1,5 +1,4 @@
 from typing import Tuple
-from typing_extensions import LiteralString
 from question import Question
 import random
 
@@ -50,11 +49,11 @@ class Test:
         """
         return round(self.right_answer / self.total, 2)
 
-    def get_result_right(self) -> LiteralString:
+    def get_result_right(self) -> str:
         return f"Правильных ответов: {self.right_answer}"
 
-    def get_result_total(self) -> LiteralString:
+    def get_result_total(self) -> str:
         return f"Всего вопросов: {self.total}"
 
-    def get_result_percent(self) -> LiteralString:
+    def get_result_percent(self) -> str:
         return f"Процент правильных ответов: {self.get_percent()}"
